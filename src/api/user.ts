@@ -1,6 +1,5 @@
 import axios from "axios";
 import type { ProfileDataType } from "../lib/Types";
-import { useAppContext } from "../lib/AppContext";
 
 type userData = {
   fullName: string;

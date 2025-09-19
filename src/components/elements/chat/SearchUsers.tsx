@@ -1,7 +1,7 @@
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useState } from "react";
 import { getAllUsersBesidesAuthenticatedOne } from "../../../api/user";
 import { useAppContext } from "../../../lib/AppContext";
 import type { User } from "../../../lib/Types";

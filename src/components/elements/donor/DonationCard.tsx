@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import type { Donation } from "../../../lib/Types";
 import { AlertCircleIcon, CalendarIcon, PackageIcon } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";

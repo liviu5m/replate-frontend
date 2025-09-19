@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DashboardLayout from "../../layouts/DashboardLayout";
-import { faPlus, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useAppContext } from "../../../lib/AppContext";
 import {
-  AlertCircleIcon,
   CheckCircleIcon,
   PackageIcon,
   PlusIcon,

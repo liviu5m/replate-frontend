@@ -10,7 +10,7 @@ import { getAllRequests } from "../../../api/request";
 import RequestCard from "../../elements/RequestCard";
 
 const DriverAvailableRequests = () => {
-  const { user, token } = useAppContext();
+  const { token } = useAppContext();
 
   const { data, isPending } = useQuery({
     queryKey: ["request"],

@@ -1,6 +1,5 @@
 import { faPhone, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAppContext } from "../../../lib/AppContext";
 import type { ProfileDataType } from "../../../lib/Types";
 
 const PersonalInformationCard = ({
@@ -10,7 +9,6 @@ const PersonalInformationCard = ({
   profileData: ProfileDataType;
   setProfileData: (e: ProfileDataType) => void;
 }) => {
-  const { user } = useAppContext();
 
   return (
     <div className="rounded-2xl bg-white p-10 shadow shadow-gray-300 flex justify-center flex-col">

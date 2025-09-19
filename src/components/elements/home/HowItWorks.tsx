@@ -1,6 +1,5 @@
 import { faClock, faMedal, faSignal, faTruck, faUser, faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
 const HowItWorks = () => {
   return (

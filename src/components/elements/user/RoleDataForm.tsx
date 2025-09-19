@@ -2,7 +2,7 @@ import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import type { AxiosError } from "axios";
-import { createUser, setUpUserRole } from "../../../api/user";
+import { setUpUserRole } from "../../../api/user";
 import {
   Select,
   SelectContent,

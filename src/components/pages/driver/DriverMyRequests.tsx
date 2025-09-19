@@ -8,12 +8,9 @@ import {
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 import {
-  CheckCircleIcon,
   PackageIcon,
-  ShoppingCartIcon,
-  TruckIcon,
 } from "lucide-react";
-import type { Request, RequestDonation } from "../../../lib/Types";
+import type { Request } from "../../../lib/Types";
 import {
   Select,
   SelectContent,

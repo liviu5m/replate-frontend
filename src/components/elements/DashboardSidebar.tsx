@@ -6,7 +6,6 @@ import {
   TruckIcon,
   UsersIcon,
 } from "lucide-react";
-import React from "react";
 import { useAppContext } from "../../lib/AppContext";
 import { Link, useLocation } from "react-router-dom";
 

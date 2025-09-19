@@ -1,4 +1,4 @@
-import { faLocationDot, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { ProfileDataType } from "../../../lib/Types";
 import { useAppContext } from "../../../lib/AppContext";

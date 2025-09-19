@@ -14,7 +14,7 @@ import {
 import { PackageIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { getAllDonations, getAllDonationsByDonorId } from "../../../api/donation";
+import { getAllDonationsByDonorId } from "../../../api/donation";
 import { useAppContext } from "../../../lib/AppContext";
 import DonationCard from "../../elements/donor/DonationCard";
 import type { Donation } from "../../../lib/Types";

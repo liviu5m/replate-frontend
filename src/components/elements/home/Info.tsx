@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -14,7 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Info = () => {
-  const [questions, setQuestions] = useState([
+  const questions = [
     {
       id: 1,
       question: "How do I sign up as a food donor?",
@@ -52,7 +52,7 @@ const Info = () => {
       response:
         "Yes! Replate is a registered 501(c)(3) nonprofit organization. After each donation, you'll receive a tax receipt that you can use for your records.",
     },
-  ]);
+  ];
   const [openedQuestionId, setOpenedQuestionId] = useState(0);
 
   return (

@@ -19,7 +19,7 @@ import RequestCard from "../../elements/RequestCard";
 const NgoDashboard = () => {
   const { user, token } = useAppContext();
 
-  const { data, isPending } = useQuery({
+  const { data } = useQuery({
     queryKey: ["donations"],
     queryFn: () =>
       getAllDonations(token || "", "AVAILABLE", ""),

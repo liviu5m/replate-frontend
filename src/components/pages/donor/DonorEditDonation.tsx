@@ -3,10 +3,8 @@ import DashboardLayout from "../../layouts/DashboardLayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { useAppContext } from "../../../lib/AppContext";
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import {
-  createDonation,
-  getDonationById,
   updateDonation,
 } from "../../../api/donation";
 import { useState } from "react";
@@ -15,18 +13,10 @@ import { toast } from "react-toastify";
 import type { AxiosError } from "axios";
 
 const DonorEditDonation = () => {
-  const { user, token } = useAppContext();
+  const { token } = useAppContext();
   const { id } = useParams();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
-
-  const { data } = useQuery({
-    queryKey: ["donation", id],
-    queryFn: () => getDonationById(Number(id), token || ""),
-    select: (data) => {
-      setDonation(data);
-    },
-  });
 
   const [donation, setDonation] = useState<DonationDto>({
     name: "",

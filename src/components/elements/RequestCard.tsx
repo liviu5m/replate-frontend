@@ -1,11 +1,9 @@
 import {
-  ChartAreaIcon,
   CheckCircleIcon,
   ShoppingCartIcon,
   TruckIcon,
 } from "lucide-react";
 import type {
-  Donation,
   DonationDto,
   Request,
   RequestDonation,
@@ -19,7 +17,6 @@ import { useState } from "react";
 import RequestDetailsModal from "./driver/RequestDetailsModal";
 import { updateRequestStatus } from "../../api/request";
 import Swal from "sweetalert2";
-import { deleteRequestDonations } from "../../api/request-donation";
 import { updateDonation } from "../../api/donation";
 
 const getStatusIcon = (status: string) => {
@@ -58,7 +55,6 @@ const getStatusColor = (status: string) => {
 
 const RequestCard = ({
   request,
-  action = false,
   role,
 }: {
   request: Request;

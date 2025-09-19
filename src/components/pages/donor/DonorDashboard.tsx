@@ -6,19 +6,18 @@ import { useAppContext } from "../../../lib/AppContext";
 import {
   AlertCircleIcon,
   CheckCircleIcon,
-  ClipboardListIcon,
   PackageIcon,
   PlusIcon,
 } from "lucide-react";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { getAllDonations, getAllDonationsByDonorId } from "../../../api/donation";
+import { getAllDonationsByDonorId } from "../../../api/donation";
 import type { Donation } from "../../../lib/Types";
 import DonationCard from "../../elements/donor/DonationCard";
 
 const DonorDashboard = () => {
   const { user, token } = useAppContext();
 
-  const { data, isPending } = useQuery({
+  const { data } = useQuery({
     queryKey: ["donations"],
     queryFn: () => getAllDonationsByDonorId(user?.id || -1, token || "", "all", ""),
     refetchOnWindowFocus: false,

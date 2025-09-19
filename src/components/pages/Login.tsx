@@ -1,9 +1,8 @@
 import { ToastContainer } from "react-toastify";
-import { useState } from "react";
 import LogInForm from "../elements/user/LogInForm";
 
 const Signup = () => {
-  const [step, setStep] = useState(1);
+  let step = 1;
   
 
   return (

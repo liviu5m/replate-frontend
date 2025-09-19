@@ -87,7 +87,7 @@ const Chat = () => {
   useEffect(() => {
     const chatChannel = supabase.channel(`chat-${senderId}-${receiverId}`);
 
-    const subscription = chatChannel
+    chatChannel
       .on("broadcast", { event: "private-message" }, (payload: any) => {
         const msg = payload.payload as Message;
 
